@@ -14,3 +14,7 @@ CS295 Data Privacy Final Project
 
 * Escape:
 `<ctrl>-d`
+
+* *To-Do:*
+  * *create packages in dpNet directory: functions and analyses will live here.*
+  * *Get the real-world networks we will experiment with.*
