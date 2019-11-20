@@ -16,5 +16,6 @@ CS295 Data Privacy Final Project
 `<ctrl>-d`
 
 * *To-Do:*
-  * *create packages in dpNet directory: functions and analyses will live here.*
+  * *create packages in dpnet directory: functions and analyses will live here.*
   * *Get the real-world networks we will experiment with.*
+  * *Start doing some analyses in a jupyternotebook*
