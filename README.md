@@ -2,7 +2,7 @@
 CS295 Data Privacy Final Project
 ***
 
-* Install [Docker]{https://hub.docker.com/?overlay=onboarding}
+* Install [Docker](https://hub.docker.com/?overlay=onboarding)
 
 * Build:
 
