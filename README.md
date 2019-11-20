@@ -11,3 +11,6 @@ CS295 Data Privacy Final Project
 * Run:
 
 `docker run -it app`
+
+* Escape:
+`<ctrl>-d`
