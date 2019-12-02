@@ -12,7 +12,13 @@ CS295 Data Privacy Final Project
 
 `docker run -it app`
 
-* Escape:
+* Launch Jupyter Notebook:
+
+`jupyter notebook`
+
+* Navigate to `./notebooks/Project.ipynb`
+
+* To Escape Docker env:
 `<ctrl>-d`
 
 * *To-Do:*
