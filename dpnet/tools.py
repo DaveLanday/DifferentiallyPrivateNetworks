@@ -30,6 +30,7 @@ def clipGraph(g, b):
         g_.remove_edges_from(e2remove)
     return g_
 
+<<<<<<< HEAD
 def ls_at_distance(g, upper, k):
     """
         Calculates local sensitivity at a distance k.
@@ -67,3 +68,30 @@ def smoothSensitivity(g, upper, k, epsilon):
     sensitivity = 2*S
 
     return sensitivity
+=======
+
+def create_dict(n, e):
+    d = {}
+    count = 0
+    tmp = 0
+
+    for i in range(len(n)):
+        d[i] = 0
+
+    for i in e:
+        if i[0] != tmp:
+            d[tmp] = count
+            tmp = i[0]
+            count = 1
+        else:
+            count += 1
+
+    return d
+
+
+def edge_mean(d):
+    d_sum = 0
+    for x, y in d.items():
+        d_sum += y
+    return d_sum/len(d)
+>>>>>>> bd624469ee9ecab37b891b9a8018de28027d7220
