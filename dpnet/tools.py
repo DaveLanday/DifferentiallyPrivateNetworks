@@ -29,3 +29,10 @@ def clipGraph(g, b):
         e2remove = [e[i] for i in edges]
         g_.remove_edges_from(e2remove)
     return g_
+
+
+def edge_mean(d):
+    d_sum = 0
+    for x, y in d.items():
+        d_sum += y
+    return d_sum/len(d)
