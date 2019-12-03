@@ -47,6 +47,8 @@ def create_dict(n, e):
         else:
             count += 1
 
+    return d
+
 
 def edge_mean(d):
     d_sum = 0
