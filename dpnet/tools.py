@@ -31,6 +31,23 @@ def clipGraph(g, b):
     return g_
 
 
+def create_dict(n, e):
+    d = {}
+    count = 0
+    tmp = 0
+
+    for i in range(len(n)):
+        d[i] = 0
+
+    for i in e:
+        if i[0] != tmp:
+            d[tmp] = count
+            tmp = i[0]
+            count = 1
+        else:
+            count += 1
+
+
 def edge_mean(d):
     d_sum = 0
     for x, y in d.items():
