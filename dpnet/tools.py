@@ -22,9 +22,9 @@ def clipGraph(g, b):
         returns: g' (Graph): a clipped network
     """
     g_ = deepcopy(g)
-    n2check = [(k, abs(v-b)) for k,v in g.degree() if v > b]
+    n2check = [(k, abs(v-b)) for k,v in g_.degree() if v > b]
     for node in n2check:
-        e = list(g_.edges(node[0]))
+        e = list(g.edges(node[0]))
         edges = np.random.choice(list(range(len(e))), size=node[1], replace=False)
         e2remove = [e[i] for i in edges]
         g_.remove_edges_from(e2remove)
@@ -92,3 +92,13 @@ def edge_mean(d):
         d_sum += y
     return d_sum/len(d)
 
+def pct_error(predicted, truth):
+    """
+        Calculates the error in a differentially private query and the true query answer
+
+        param: predicted (float): the predicted true answer
+        param: truth (int): the ground truth
+        
+        returns: err (float): the percent of the true value the predicted value is
+    """
+    return np.abs(predicted-truth) / truth * 100
